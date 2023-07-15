@@ -1,4 +1,4 @@
-# Data Analysis | Science | Engineering
+# Industrial Engineer
 
 #### Technical Skills: Python, SQL, Power BI, Tableau.
 ## Education
