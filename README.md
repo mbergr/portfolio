@@ -1,4 +1,4 @@
-# Data Engineering | Data Science | Data Analysis
+# Data Analysis | Science | Engineering
 
 #### Technical Skills: Python, SQL, Power BI, Tableau.
 ## Education
