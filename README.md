@@ -1,6 +1,6 @@
-# Data Scientist
+# Data Engineering | Data Science | Data Analysis
 
-#### Technical Skills: Python, SQL, 
+#### Technical Skills: Python, SQL, Power BI, Tableau.
 ## Education
 - Diploma, Data Science	| Universidad de Chile (_January 2022_)	 			        		
 - B.S., Industrial Engineering | Universidad de los Andes (_May 2021_)
