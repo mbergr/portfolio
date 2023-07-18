@@ -12,7 +12,7 @@
 -  Generated reports using **Python** and **SAP** data to support production sub-management in decision-making.
 -  Supervised and coordinated with plant and office heads nationally to implement continuous improvement methodologies through monthly meetings.
 
-**Trainee Enineer @ Abastible (_January 2021 - March 2022_)**
+**Trainee Engineer @ Abastible (_January 2021 - March 2022_)**
 -  Segmented bulk sales channel's customer portfolio applying K-means algorithm in **Python**, for a loyalty campaign.
 
 **Engineering Internship @ Coca-Cola Andina (_January 2019 - March 2019_)**
