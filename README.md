@@ -7,7 +7,7 @@
 - B.S., Industrial Engineering | Universidad de los Andes (_May 2021_)
 
 ## Work Experience
-**Data Analyst @ INTER Versicherungsgruppe (_Oktober 2023 - now_)**
+**Data Analyst @ INTER Versicherungsgruppe (_October 2023 - now_)**
 -  Analyst at IT - EDS - Data Reporting & Visualization
 
 **Business Analyst @ Abastible (_March 2022 - May 2022_)**
