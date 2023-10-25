@@ -1,7 +1,7 @@
 # Industrial Engineer
 ### Data Analysis | Science | Engineering
 
-#### Technical Skills: Python, SQL, ETL processes, Power BI, Tableau.
+#### Technical Skills: Python, SQL, ETL processes, Cognos Analytics, Power BI.
 ## Education
 - Diploma, Data Science	| Universidad de Chile (_January 2022_)	 			        		
 - B.S., Industrial Engineering | Universidad de los Andes (_May 2021_)
