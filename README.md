@@ -8,7 +8,11 @@
 
 ## Work Experience
 **Data Analyst @ INTER Versicherungsgruppe (_October 2023 - now_)**
--  Analyst at IT - EDS - Data Reporting & Visualization
+-  Resolved BI service tickets by developing reports and dashboards using IBM Cognos Analytics, ensuring timely and accurate data products that support informed business decision-making.
+-  Proficient in optimizing BI reports to reduce runtime, streamlining data access for key stakeholders.
+-  Executed SQL statements in databases using dBeaver to verify data integrity and troubleshoot issues in real time.
+-  Collaborated cross-functionally with technical teams and internal business clients to conduct data quality tests, ensuring the accuracy and reliability of data in the Data Warehouse to support high-stakes business operations.
+-  Maintained comprehensive documentation with Confluence and managed workflow and service requests efficiently using JIRA.
 
 **Business Analyst @ Abastible (_March 2022 - May 2022_)**
 -  Defined key performance indicators (KPIs) to control production in packaging plants.
