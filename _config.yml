@@ -25,5 +25,5 @@ plugins:
   - jekyll-sitemap
 
 # Custom CSS for more control over the look
-custom_css:
-  - /assets/css/custom.css
+#custom_css:
+#  - /assets/css/custom.css
