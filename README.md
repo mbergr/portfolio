@@ -1,4 +1,4 @@
-# Industrial Engineer
+# Mathias Berg
 ### Data Analysis | Science | Engineering
 
 #### Technical Skills: Python, SQL, ETL/ELT, DWH, Cognos Analytics.
