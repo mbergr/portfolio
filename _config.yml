@@ -1,5 +1,20 @@
-title: Mathias Berg
+title: "Mathias Berg - Industrial Engineer"
 logo: /assets/img/cara_cropped.png
-description: Currently working/learning Data Analysis, Science and Engineering.
+description: "Industrial Engineer specializing in Data Analysis, Science, and Engineering. Experienced in BI, Python, SQL, and Data Warehousing."
 show_downloads: false
 theme: jekyll-theme-minimal
+
+# Additional configuration options to enhance the website
+social_links:
+  github: "https://github.com/mbergr"
+  linkedin: "Your LinkedIn Profile URL"
+  email: "Your Email Address"
+
+# Navigation items
+nav:
+  - title: "About"
+    url: "/#about"
+  - title: "Projects"
+    url: "/#projects"
+  - title: "Contact"
+    url: "/#contact"
