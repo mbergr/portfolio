@@ -1,7 +1,7 @@
 # Industrial Engineer
 ### Data Analysis | Science | Engineering
 
-#### Technical Skills: Python, SQL, ETL/ELT, DWH, Cognos Analytics, Power BI.
+#### Technical Skills: Python, SQL, ETL/ELT, DWH, Cognos Analytics.
 
 ## Education
 - Diploma, Data Science	| Universidad de Chile (_January 2022_)	 			        		
@@ -14,7 +14,7 @@
 -  Executed **SQL statements** in databases using dBeaver to verify data integrity and troubleshoot issues.
 -  Collaborated cross-functionally with business and technical teams to conduct **data quality tests**, ensuring the reliability of the Data Warehouse for critical business operations.
 -  Maintained comprehensive documentation in **Confluence** and managed service requestss efficiently using **Jira**, streamlining team processes.
--  
+    
 **Business Analyst @ Abastible (_March 2022 - May 2022_)**
 -  Defined key performance indicators (KPIs) to control production in packaging plants.
 -  Generated reports using **Python** and **SAP** data to support production sub-management in decision-making.
