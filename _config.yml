@@ -1,14 +1,14 @@
-title: "Mathias Berg - Industrial Engineer"
+title: "Mathias Berg"
 logo: /assets/img/cara_cropped.png
-description: "Industrial Engineer specializing in Data Analysis, Science, and Engineering. Experienced in BI, Python, SQL, and Data Warehousing."
+description: "Industrial Engineer specializing in Data Analysis, Science, and Engineering. Experienced in BI, Data Warehousing, Python and SQL."
 show_downloads: false
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman  # Changed to a more visually engaging theme
 
-# Additional configuration options to enhance the website
+# Social Links
 social_links:
   github: "https://github.com/mbergr"
-  linkedin: "Your LinkedIn Profile URL"
-  email: "Your Email Address"
+  linkedin: "https://linkedin.com/in/your-profile"
+  email: "your-email@example.com"
 
 # Navigation items
 nav:
@@ -18,3 +18,12 @@ nav:
     url: "/#projects"
   - title: "Contact"
     url: "/#contact"
+
+# Styling Enhancements
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Custom CSS for more control over the look
+custom_css:
+  - /assets/css/custom.css
