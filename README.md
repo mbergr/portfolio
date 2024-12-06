@@ -9,12 +9,12 @@
 
 ## Work Experience
 **Data Analyst @ INTER Versicherungsgruppe (_October 2023 - now_)**
-• Developed and refined **IBM Cognos Analytics** reports and dashboards to address BI service requests, ensuring stakeholders received accurate, timely insights.
-• Optimized underlying **query logic** to improve report run times and system performance.
-• Utilized **SQL** in **dBeaver** to validate data integrity, identify discrepancies, and troubleshoot issues at the source.
-• Worked closely with cross-functional teams to perform thorough **data quality** assessments, ensuring the reliability of the **Data Warehouse** for critical business operations.
-• Supported the IBM Cognos Analytics upgrade from version 11.2.4 to 12.0.3, including integrating and configuring **Jupyter Notebooks** to enhance data analysis and visualization capabilities.
-• Streamlined team processes by maintaining clear, comprehensive documentation in **Confluence** and efficiently managing service requests in **JIRA**.
+- Developed and refined **IBM Cognos Analytics** reports and dashboards to address BI service requests, ensuring stakeholders received accurate, timely insights.
+- Optimized underlying **query logic** to improve report run times and system performance.
+- Utilized **SQL** in **dBeaver** to validate data integrity, identify discrepancies, and troubleshoot issues at the source.
+- Worked closely with cross-functional teams to perform thorough **data quality** assessments, ensuring the reliability of the **Data Warehouse** for critical business operations.
+- Supported the IBM Cognos Analytics upgrade from version 11.2.4 to 12.0.3, including integrating and configuring **Jupyter Notebooks** to enhance data analysis and visualization capabilities.
+- Streamlined team processes by maintaining clear, comprehensive documentation in **Confluence** and efficiently managing service requests in **JIRA**.
     
 **Business Analyst @ Abastible (_March 2022 - May 2022_)**
 -  Defined key performance indicators (KPIs) to control production in packaging plants.
