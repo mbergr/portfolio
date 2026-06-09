@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathias Berg — Data Engineer</title>
+  <meta name="description" content="Industrial Engineer specializing in Data Analysis, Science, and Engineering. Experienced in BI, Data Warehousing, Python and SQL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3350;
+      --accent: #6c8eff;
+      --accent2: #a78bfa;
+      --text: #e2e8f0;
+      --muted: #8892aa;
+      --tag-bg: #1e2540;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Layout ── */
+    .container { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(15,17,23,.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    nav .inner {
+      max-width: 820px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 56px;
+    }
+    .nav-logo { font-weight: 600; font-size: 15px; color: var(--text); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: var(--muted); font-size: 14px; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 96px 0 80px;
+      display: flex; align-items: center; gap: 48px;
+    }
+    .hero-img {
+      flex-shrink: 0;
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      border: 3px solid var(--border);
+      object-fit: cover;
+    }
+    .hero-eyebrow {
+      font-size: 13px; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 12px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 700; line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .hero-sub {
+      color: var(--muted); font-size: 15px; max-width: 460px; margin-bottom: 28px;
+    }
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .tag {
+      background: var(--tag-bg); border: 1px solid var(--border);
+      color: var(--muted); font-size: 12px; font-weight: 500;
+      padding: 4px 10px; border-radius: 999px;
+    }
+    .hero-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 9px 18px; border-radius: 8px; font-size: 14px; font-weight: 500;
+      transition: opacity .2s; cursor: pointer;
+    }
+    .btn-primary { background: var(--accent); color: #0f1117; }
+    .btn-ghost {
+      border: 1px solid var(--border); color: var(--muted);
+      background: transparent;
+    }
+    .btn:hover { opacity: .85; text-decoration: none; }
+
+    /* ── Section ── */
+    section { padding: 72px 0; border-top: 1px solid var(--border); }
+    .section-label {
+      font-size: 11px; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: 1.6rem; font-weight: 700; margin-bottom: 40px;
+    }
+
+    /* ── Skills ── */
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill-chip {
+      background: var(--surface); border: 1px solid var(--border);
+      padding: 6px 14px; border-radius: 8px; font-size: 13px;
+      font-weight: 500; color: var(--text);
+    }
+
+    /* ── Timeline ── */
+    .timeline { display: flex; flex-direction: column; gap: 0; }
+    .tl-item {
+      display: grid; grid-template-columns: 140px 1fr;
+      gap: 0 28px; position: relative; padding-bottom: 40px;
+    }
+    .tl-item:last-child { padding-bottom: 0; }
+    .tl-date {
+      padding-top: 4px; font-size: 12px; font-weight: 500;
+      color: var(--muted); text-align: right; line-height: 1.4;
+    }
+    .tl-body {
+      border-left: 2px solid var(--border); padding-left: 24px;
+      padding-bottom: 4px; position: relative;
+    }
+    .tl-body::before {
+      content: ''; position: absolute; left: -6px; top: 7px;
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--accent); border: 2px solid var(--bg);
+    }
+    .tl-company { font-size: 12px; color: var(--accent2); font-weight: 600; margin-bottom: 2px; }
+    .tl-role { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 10px; }
+    .tl-bullets { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .tl-bullets li {
+      font-size: 13.5px; color: var(--muted); padding-left: 14px; position: relative;
+    }
+    .tl-bullets li::before {
+      content: '›'; position: absolute; left: 0; color: var(--accent); font-weight: 700;
+    }
+    .tl-bullets strong { color: var(--text); font-weight: 500; }
+
+    /* ── Education ── */
+    .edu-grid { display: flex; flex-direction: column; gap: 16px; }
+    .edu-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 20px 24px;
+      display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+    }
+    .edu-degree { font-weight: 600; font-size: 14.5px; margin-bottom: 4px; }
+    .edu-school { color: var(--muted); font-size: 13px; }
+    .edu-year { font-size: 12px; color: var(--accent); font-weight: 600; white-space: nowrap; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0; text-align: center;
+      color: var(--muted); font-size: 13px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .hero { flex-direction: column; gap: 28px; padding: 64px 0 56px; }
+      .tl-item { grid-template-columns: 1fr; }
+      .tl-date { text-align: left; padding-top: 0; margin-bottom: 8px; }
+      .edu-card { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="inner">
+      <span class="nav-logo">MB</span>
+      <ul class="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Hero -->
+    <header class="hero">
+      <img src="/assets/img/cara_cropped.png" alt="Mathias Berg" class="hero-img" />
+      <div>
+        <p class="hero-eyebrow">Data &amp; Analytics</p>
+        <h1>Mathias Berg</h1>
+        <p class="hero-sub">Industrial Engineer specializing in Data Analysis, Science, and Engineering. Experienced in BI, Data Warehousing, Python and SQL.</p>
+        <div class="hero-tags">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">ETL/ELT</span>
+          <span class="tag">Data Warehousing</span>
+          <span class="tag">Cognos Analytics</span>
+        </div>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="https://github.com/mbergr" target="_blank" rel="noopener">
+            GitHub
+          </a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Experience -->
+    <section id="experience">
+      <p class="section-label">Career</p>
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-date">Oct 2023 — Present</div>
+          <div class="tl-body">
+            <div class="tl-company">INTER Versicherungsgruppe</div>
+            <div class="tl-role">Data Analyst</div>
+            <ul class="tl-bullets">
+              <li>Developed and refined <strong>IBM Cognos Analytics</strong> reports and dashboards to address BI service requests, ensuring stakeholders received accurate, timely insights.</li>
+              <li>Optimized underlying <strong>query logic</strong> to improve report run times and system performance.</li>
+              <li>Utilized <strong>SQL</strong> in dBeaver to validate data integrity, identify discrepancies, and troubleshoot issues at the source.</li>
+              <li>Performed thorough <strong>data quality</strong> assessments, ensuring the reliability of the Data Warehouse for critical business operations.</li>
+              <li>Supported the IBM Cognos Analytics upgrade from 11.2.4 to 12.0.3, integrating <strong>Jupyter Notebooks</strong> for enhanced analysis capabilities.</li>
+              <li>Maintained documentation in <strong>Confluence</strong> and managed service requests in <strong>JIRA</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">Mar 2022 — May 2022</div>
+          <div class="tl-body">
+            <div class="tl-company">Abastible</div>
+            <div class="tl-role">Business Analyst</div>
+            <ul class="tl-bullets">
+              <li>Defined KPIs to control production in packaging plants.</li>
+              <li>Generated reports using <strong>Python</strong> and <strong>SAP</strong> data to support production decision-making.</li>
+              <li>Coordinated nationally with plant and office heads to implement continuous improvement methodologies.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">Jan 2021 — Mar 2022</div>
+          <div class="tl-body">
+            <div class="tl-company">Abastible</div>
+            <div class="tl-role">Trainee Engineer</div>
+            <ul class="tl-bullets">
+              <li>Segmented the bulk sales channel's customer portfolio applying <strong>K-means</strong> in Python for a loyalty campaign.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">Jan 2019 — Mar 2019</div>
+          <div class="tl-body">
+            <div class="tl-company">Coca-Cola Andina</div>
+            <div class="tl-role">Engineering Internship</div>
+            <ul class="tl-bullets">
+              <li>Programmed and automated a report using <strong>Python</strong> and <strong>VBA</strong>, reducing an S&amp;OP analyst's workload by 45 minutes per day.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <p class="section-label">Academic</p>
+      <h2 class="section-title">Education</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div>
+            <div class="edu-degree">Diploma, Data Science</div>
+            <div class="edu-school">Universidad de Chile</div>
+          </div>
+          <div class="edu-year">Jan 2022</div>
+        </div>
+        <div class="edu-card">
+          <div>
+            <div class="edu-degree">B.S., Industrial Engineering</div>
+            <div class="edu-school">Universidad de los Andes</div>
+          </div>
+          <div class="edu-year">May 2021</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <p class="section-label">Tools &amp; Technologies</p>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">SQL</span>
+        <span class="skill-chip">ETL / ELT</span>
+        <span class="skill-chip">Data Warehousing</span>
+        <span class="skill-chip">IBM Cognos Analytics</span>
+        <span class="skill-chip">dBeaver</span>
+        <span class="skill-chip">Jupyter Notebooks</span>
+        <span class="skill-chip">SAP</span>
+        <span class="skill-chip">VBA</span>
+        <span class="skill-chip">Confluence</span>
+        <span class="skill-chip">JIRA</span>
+        <span class="skill-chip">K-means</span>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Mathias Berg · <a href="https://github.com/mbergr">github.com/mbergr</a>
+    </div>
+  </footer>
+
+</body>
+</html>
