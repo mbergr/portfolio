@@ -148,6 +148,19 @@
     }
     .tl-bullets strong { color: var(--text); font-weight: 500; }
 
+    /* Company header row */
+    .tl-company-header { padding-bottom: 4px; }
+    .tl-company-header .tl-body::before { background: var(--accent2); width: 12px; height: 12px; left: -7px; }
+    .tl-company-name { font-size: 15px; font-weight: 700; color: var(--text); }
+    .tl-company-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+    /* Sub-role rows (indented) */
+    .tl-sub-role .tl-body { margin-left: 16px; border-left-color: var(--surface2); }
+    .tl-sub-role .tl-body::before { background: var(--border); width: 8px; height: 8px; left: -5px; top: 9px; }
+    .tl-sub-role .tl-date { color: #5a6380; }
+    .tl-sub-role { padding-bottom: 20px; }
+    .tl-sub-role:last-child { padding-bottom: 28px; }
+
     /* ── Education ── */
     .edu-grid { display: flex; flex-direction: column; gap: 16px; }
     .edu-card {
@@ -222,10 +235,18 @@
       <h2 class="section-title">Work Experience</h2>
       <div class="timeline">
 
-        <div class="tl-item">
+        <!-- INTER: grouped under one company header -->
+        <div class="tl-item tl-company-header">
+          <div class="tl-date">Oct 2023 — Present</div>
+          <div class="tl-body">
+            <div class="tl-company-name">INTER Versicherungsgruppe</div>
+            <div class="tl-company-sub">Mannheim, Germany</div>
+          </div>
+        </div>
+
+        <div class="tl-item tl-sub-role">
           <div class="tl-date">Apr 2026 — Present</div>
           <div class="tl-body">
-            <div class="tl-company">INTER Versicherungsgruppe · Mannheim, Germany</div>
             <div class="tl-role">Specialist Data Analyst</div>
             <ul class="tl-bullets">
               <li>Own data models and reporting for four business units, setting modeling standards (<strong>star schema</strong>, fact/dimension design) for consistent, trusted metrics.</li>
@@ -235,10 +256,9 @@
           </div>
         </div>
 
-        <div class="tl-item">
+        <div class="tl-item tl-sub-role">
           <div class="tl-date">Oct 2023 — Mar 2026</div>
           <div class="tl-body">
-            <div class="tl-company">INTER Versicherungsgruppe · Mannheim, Germany</div>
             <div class="tl-role">Junior Data Analyst</div>
             <ul class="tl-bullets">
               <li>Built reports, dashboards, and data models in <strong>IBM Cognos Analytics</strong>, applying dimensional modeling within a three-layer Framework Manager architecture.</li>
@@ -249,10 +269,18 @@
           </div>
         </div>
 
-        <div class="tl-item">
+        <!-- Abastible -->
+        <div class="tl-item tl-company-header">
           <div class="tl-date">Jan 2021 — May 2022</div>
           <div class="tl-body">
-            <div class="tl-company">Abastible · Santiago, Chile</div>
+            <div class="tl-company-name">Abastible</div>
+            <div class="tl-company-sub">Santiago, Chile</div>
+          </div>
+        </div>
+
+        <div class="tl-item tl-sub-role">
+          <div class="tl-date">Jan 2021 — May 2022</div>
+          <div class="tl-body">
             <div class="tl-role">Operations Business Analyst</div>
             <ul class="tl-bullets">
               <li>Deployed a <strong>K-Means customer-segmentation model</strong> (scikit-learn) into production, segmenting the bulk-sales portfolio to enable a targeted loyalty campaign.</li>
@@ -261,10 +289,18 @@
           </div>
         </div>
 
-        <div class="tl-item">
+        <!-- Coca-Cola Andina -->
+        <div class="tl-item tl-company-header">
           <div class="tl-date">Jan 2019 — Mar 2019</div>
           <div class="tl-body">
-            <div class="tl-company">Coca-Cola Andina · Santiago, Chile</div>
+            <div class="tl-company-name">Coca-Cola Andina</div>
+            <div class="tl-company-sub">Santiago, Chile</div>
+          </div>
+        </div>
+
+        <div class="tl-item tl-sub-role">
+          <div class="tl-date">Jan 2019 — Mar 2019</div>
+          <div class="tl-body">
             <div class="tl-role">Engineering Internship</div>
             <ul class="tl-bullets">
               <li>Automated a recurring S&amp;OP report in <strong>Python and VBA</strong>, eliminating ~30 minutes of daily manual work and a recurring source of error.</li>
@@ -279,21 +315,37 @@
     <section id="education">
       <p class="section-label">Academic</p>
       <h2 class="section-title">Education</h2>
-      <div class="edu-grid">
-        <div class="edu-card">
-          <div>
-            <div class="edu-degree">Diploma, Business Intelligence &amp; Data Science</div>
-            <div class="edu-school">Universidad de Chile</div>
+      <div class="timeline">
+
+        <div class="tl-item tl-company-header">
+          <div class="tl-date">2021 – 2022</div>
+          <div class="tl-body">
+            <div class="tl-company-name">Universidad de Chile</div>
           </div>
-          <div class="edu-year">2021 – 2022</div>
         </div>
-        <div class="edu-card">
-          <div>
-            <div class="edu-degree">B.Sc., Industrial Engineering</div>
-            <div class="edu-school">Universidad de los Andes · Spec. Operations Management, Minor: Innovation</div>
+        <div class="tl-item tl-sub-role">
+          <div class="tl-date">2021 – 2022</div>
+          <div class="tl-body">
+            <div class="tl-role">Diploma, Business Intelligence &amp; Data Science</div>
           </div>
-          <div class="edu-year">2017 – 2021</div>
         </div>
+
+        <div class="tl-item tl-company-header">
+          <div class="tl-date">2017 – 2021</div>
+          <div class="tl-body">
+            <div class="tl-company-name">Universidad de los Andes</div>
+          </div>
+        </div>
+        <div class="tl-item tl-sub-role">
+          <div class="tl-date">2017 – 2021</div>
+          <div class="tl-body">
+            <div class="tl-role">B.Sc., Industrial Engineering</div>
+            <ul class="tl-bullets">
+              <li>Specialization: Operations Management · Minor: Innovation</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
 
