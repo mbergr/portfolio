@@ -1,30 +1,33 @@
+# ─── Site ───────────────────────────────────────────────────────────────────
 title: "Mathias Berg"
-logo: /assets/img/cara_cropped.png
-description: "Industrial Engineer specializing in Data Analysis, Science, and Engineering. Experienced in BI, Data Warehousing, Python and SQL."
-show_downloads: false
-#theme: jekyll-theme-cayman  # Changed to a more visually engaging theme
-theme: jekyll-theme-minimal
+description: >
+  Data Analyst transitioning to Analytics Engineering.
+  Writing about dbt, DuckDB, SQL, Python, and data engineering.
+url: "https://mbergr.github.io"
+baseurl: "/portfolio"
 
-# Social Links
-social_links:
-  github: "https://github.com/mbergr"
-  linkedin: "https://linkedin.com/in/your-profile"
-  email: "your-email@example.com"
+# ─── Build ──────────────────────────────────────────────────────────────────
+# No remote_theme / theme: Jekyll serves index.html as-is (no front matter).
+# Layouts in _layouts/ are only applied to pages that declare layout: in ---
+markdown: kramdown
+highlighter: rouge
 
-# Navigation items
-nav:
-  - title: "About"
-    url: "/#about"
-  - title: "Projects"
-    url: "/#projects"
-  - title: "Contact"
-    url: "/#contact"
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
 
-# Styling Enhancements
+# ─── Permalinks ─────────────────────────────────────────────────────────────
+permalink: /blog/:year/:month/:title/
+
+# ─── Plugins (all whitelisted by github-pages gem) ──────────────────────────
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Custom CSS for more control over the look
-#custom_css:
-#  - /assets/css/custom.css
+# ─── Exclude from build ─────────────────────────────────────────────────────
+exclude:
+  - BLOG_README.md
+  - "*.sh"
