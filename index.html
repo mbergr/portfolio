@@ -121,24 +121,6 @@
     .btn-primary:hover { box-shadow: 0 8px 24px rgba(108,142,255,.35); }
     .btn-ghost:hover { border-color: var(--accent); color: var(--text); }
 
-    /* ── Hero metrics strip ── */
-    .hero-stats {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
-      margin: 8px 0 8px;
-    }
-    .stat {
-      background: linear-gradient(180deg, var(--surface), rgba(26,29,39,.4));
-      border: 1px solid var(--border); border-radius: 12px;
-      padding: 20px 18px; transition: transform .2s ease, border-color .2s ease;
-    }
-    .stat:hover { transform: translateY(-3px); border-color: var(--accent); }
-    .stat-num {
-      font-size: 1.7rem; font-weight: 700; line-height: 1;
-      color: var(--text); margin-bottom: 8px;
-    }
-    .stat-num span { color: var(--accent); }
-    .stat-label { font-size: 12.5px; color: var(--muted); line-height: 1.35; }
-
     /* ── Section ── */
     section { padding: 72px 0; border-top: 1px solid var(--border); }
     .section-label {
@@ -233,9 +215,6 @@
     }
 
     /* ── Responsive ── */
-    @media (max-width: 720px) {
-      .hero-stats { grid-template-columns: repeat(2, 1fr); }
-    }
     @media (max-width: 600px) {
       .hero { flex-direction: column; gap: 28px; padding: 64px 0 56px; text-align: center; }
       .hero-tags, .hero-links { justify-content: center; }
@@ -287,26 +266,6 @@
         <p style="margin-top:16px;font-size:13px;color:var(--muted)">Stuttgart, Germany &nbsp;·&nbsp; +49 1575 4289411</p>
       </div>
     </header>
-
-    <!-- Impact metrics (edit numbers/labels freely) -->
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-num">3<span>+</span></div>
-        <div class="stat-label">Years in BI &amp; analytics</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">4</div>
-        <div class="stat-label">Business units modeled</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">50<span>%</span></div>
-        <div class="stat-label">Faster query load times</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">3</div>
-        <div class="stat-label">Languages (ES · DE · EN)</div>
-      </div>
-    </div>
 
     <!-- Experience -->
     <section id="experience">
