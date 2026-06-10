@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mathias Berg — Data Analyst</title>
   <meta name="description" content="Data Analyst with 3+ years delivering BI and analytics in enterprise insurance, transitioning into analytics engineering. SQL, Python, dimensional modeling." />
+
+  <!-- Favicon (inline SVG, no extra file) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f1117'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='52' font-weight='700' fill='%236c8eff' text-anchor='middle'%3EMB%3C/text%3E%3C/svg%3E" />
+
+  <!-- Open Graph / link sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mathias Berg — Data Analyst / Analytics Engineering" />
+  <meta property="og:description" content="Data Analyst with 3+ years in enterprise insurance BI, moving into analytics engineering. SQL · Python · dimensional modeling." />
+  <meta property="og:url" content="https://mbergr.github.io/portfolio/" />
+  <meta property="og:image" content="https://mbergr.github.io/portfolio/assets/img/ingeniero.png" />
+  <meta name="twitter:card" content="summary" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -65,9 +77,15 @@
       flex-shrink: 0;
       width: 160px; height: 160px;
       border-radius: 50%;
-      border: 3px solid var(--border);
+      border: 3px solid var(--accent);
       object-fit: cover;
       object-position: center top;
+      box-shadow: 0 0 0 6px rgba(108,142,255,.10), 0 10px 40px rgba(108,142,255,.18);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .hero-img:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 0 6px rgba(108,142,255,.16), 0 16px 48px rgba(108,142,255,.28);
     }
     .hero-eyebrow {
       font-size: 13px; font-weight: 600; letter-spacing: .1em;
@@ -93,18 +111,44 @@
       padding: 9px 18px; border-radius: 8px; font-size: 14px; font-weight: 500;
       transition: opacity .2s; cursor: pointer;
     }
-    .btn-primary { background: var(--accent); color: #0f1117; }
+    .btn-primary { background: var(--accent); color: #0f1117; font-weight: 600; }
     .btn-ghost {
       border: 1px solid var(--border); color: var(--muted);
       background: transparent;
     }
-    .btn:hover { opacity: .85; text-decoration: none; }
+    .btn { transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease; }
+    .btn:hover { text-decoration: none; transform: translateY(-2px); }
+    .btn-primary:hover { box-shadow: 0 8px 24px rgba(108,142,255,.35); }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--text); }
+
+    /* ── Hero metrics strip ── */
+    .hero-stats {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+      margin: 8px 0 8px;
+    }
+    .stat {
+      background: linear-gradient(180deg, var(--surface), rgba(26,29,39,.4));
+      border: 1px solid var(--border); border-radius: 12px;
+      padding: 20px 18px; transition: transform .2s ease, border-color .2s ease;
+    }
+    .stat:hover { transform: translateY(-3px); border-color: var(--accent); }
+    .stat-num {
+      font-size: 1.7rem; font-weight: 700; line-height: 1;
+      color: var(--text); margin-bottom: 8px;
+    }
+    .stat-num span { color: var(--accent); }
+    .stat-label { font-size: 12.5px; color: var(--muted); line-height: 1.35; }
 
     /* ── Section ── */
     section { padding: 72px 0; border-top: 1px solid var(--border); }
     .section-label {
       font-size: 11px; font-weight: 700; letter-spacing: .12em;
       text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .section-label::before {
+      content: ''; width: 22px; height: 2px; background: var(--accent);
+      display: inline-block; border-radius: 2px;
     }
     .section-title {
       font-size: 1.6rem; font-weight: 700; margin-bottom: 40px;
@@ -116,7 +160,13 @@
       background: var(--surface); border: 1px solid var(--border);
       padding: 6px 14px; border-radius: 8px; font-size: 13px;
       font-weight: 500; color: var(--text);
+      transition: transform .18s ease, border-color .18s ease, color .18s ease;
     }
+    .skill-chip:hover {
+      transform: translateY(-2px); border-color: var(--accent); color: #fff;
+    }
+    .tag { transition: border-color .18s ease, color .18s ease; }
+    .tag:hover { border-color: var(--accent); color: var(--text); }
 
     /* ── Timeline ── */
     .timeline { display: flex; flex-direction: column; gap: 0; }
@@ -168,7 +218,9 @@
       background: var(--surface); border: 1px solid var(--border);
       border-radius: 12px; padding: 20px 24px;
       display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+      transition: transform .2s ease, border-color .2s ease;
     }
+    .edu-card:hover { transform: translateY(-3px); border-color: var(--accent); }
     .edu-degree { font-weight: 600; font-size: 14.5px; margin-bottom: 4px; }
     .edu-school { color: var(--muted); font-size: 13px; }
     .edu-year { font-size: 12px; color: var(--accent); font-weight: 600; white-space: nowrap; }
@@ -181,8 +233,12 @@
     }
 
     /* ── Responsive ── */
+    @media (max-width: 720px) {
+      .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    }
     @media (max-width: 600px) {
-      .hero { flex-direction: column; gap: 28px; padding: 64px 0 56px; }
+      .hero { flex-direction: column; gap: 28px; padding: 64px 0 56px; text-align: center; }
+      .hero-tags, .hero-links { justify-content: center; }
       .tl-item { grid-template-columns: 1fr; }
       .tl-date { text-align: left; padding-top: 0; margin-bottom: 8px; }
       .edu-card { flex-direction: column; }
@@ -223,13 +279,34 @@
           <span class="tag">Power BI</span>
         </div>
         <div class="hero-links">
-          <a class="btn btn-primary" href="https://github.com/mbergr" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-primary" href="assets/cv/mathias-berg-cv.pdf" download>↓ Download CV</a>
+          <a class="btn btn-ghost" href="https://github.com/mbergr" target="_blank" rel="noopener">GitHub</a>
           <a class="btn btn-ghost" href="https://linkedin.com/in/mbergr" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn btn-ghost" href="mailto:mathias.berg.1992@gmail.com">Email</a>
         </div>
         <p style="margin-top:16px;font-size:13px;color:var(--muted)">Stuttgart, Germany &nbsp;·&nbsp; +49 1575 4289411</p>
       </div>
     </header>
+
+    <!-- Impact metrics (edit numbers/labels freely) -->
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">3<span>+</span></div>
+        <div class="stat-label">Years in BI &amp; analytics</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Business units modeled</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">50<span>%</span></div>
+        <div class="stat-label">Faster query load times</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Languages (ES · DE · EN)</div>
+      </div>
+    </div>
 
     <!-- Experience -->
     <section id="experience">
