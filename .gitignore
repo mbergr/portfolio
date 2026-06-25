@@ -1,1 +1,4 @@
 .claude/
+
+# spotipy / OAuth token cache — never commit
+.cache
