@@ -4,6 +4,7 @@ title: "Hello World — What This Blog Is About"
 date: 2026-06-09
 description: "First post: why I'm writing about dbt, DuckDB, SQL, Python, and the analytics engineering stack."
 tags: [meta, dbt, sql]
+published: false
 ---
 
 This is a placeholder post. Replace this content with your own — the structure below is here so you can see how **headings**, **code blocks**, and **inline code** render.
